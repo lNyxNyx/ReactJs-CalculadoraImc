@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useSatate } from 'react';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      <h1>Calculadora IMC</h1>
+      <span>Vamos calcular sei IMC !</span>
+
+      <div className="box-input">
+        <input type="text" placeholder="Peso em (kg)"></input>
+        <input type="text" placeholder="Altura em (cm)"></input>
+        <button>Calcular</button>
+      </div>
+
+      <h2>Seu IMC foi de 25, você está abaixo do peso !</h2>
+
+      <h2>Seu IMC foi de 25, você está abaixo do peso !</h2>
+
     </div>
   );
 }
-
 export default App;
